@@ -1,0 +1,110 @@
+@import "mixins";
+.pricing {
+  &__description {
+    max-width: 55.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__plans {
+    @include flexCenter;
+    gap: var(--radius-50);
+    margin-top: var(--padding-60);
+
+    @media (min-width: 768px) and (max-width: 1150px) {
+      & {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 767px) {
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__plan {
+    @include flexCenter;
+    flex-direction: column;
+    border: 2px solid #dddddd;
+    padding: 7.963rem 6.973rem 5rem;
+    border-radius: var(--radius-10);
+    line-height: var(--line-height-30);
+
+    @media (max-width: 767px) {
+      & {
+        padding: 3rem 2rem;
+      }
+    }
+
+    &-pic {
+      max-width: 100%;
+    }
+
+    &-title {
+      text-align: center;
+      margin: 3rem 0;
+      font-size: var(--font-size-18);
+      font-weight: var(--font-weight-medium);
+    }
+
+    &-features {
+      font-size: var(--font-size-14);
+      margin-bottom: 13rem;
+      height: 19rem;
+    }
+
+    &-feature {
+      @include flexCenter($justify-content: flex-start);
+      gap: 2rem;
+      margin-bottom: var(--padding-10);
+      text-wrap: nowrap;
+
+      &::before {
+        content: "";
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url("../images/check_icon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+      }
+    }
+    &-price {
+      font-size: var(--font-size-25);
+      font-weight: var(--font-weight-medium);
+      margin-bottom: var(--padding-20);
+      color: var(--color-deep-navy-blue);
+
+      &-regular {
+        color: var(--color-text);
+        font-weight: var(--font-weight-regular);
+      }
+
+      @media (max-width: 991px) {
+        font-size: var(--font-size-20);
+      }
+    }
+
+    &-button {
+      height: 4.5rem;
+      line-height: 100%;
+      font-weight: var(--font-weight-semi-bold);
+      border: 2px solid var(--color-red);
+      padding: 1.3rem 6.294rem;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked + &__plan {
+    border: 2px solid var(--color-red);
+  }
+  &__checkbox:checked + label .pricing__plan-button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    box-shadow: rgb(245, 56, 56) 0px 23px 26px -17px;
+  }
+}

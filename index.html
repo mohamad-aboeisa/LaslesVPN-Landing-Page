@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>LaslesVPN</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo">
+          <img class="logo__image" src="images/logo.png" alt="laslesvpn logo" />
+          <h3 class="title logo__title">
+            Lasles<span class="logo__title-vpn">VPN</span>
+          </h3>
+        </div>
+        <input
+          type="checkbox"
+          id="hamburgar-checkbox"
+          class="hamburgar-checkbox"
+        />
+        <label for="hamburgar-checkbox" class="hamburgar-menu">
+          <span class="hamburgar-menu__bar"></span
+          ><span class="hamburgar-menu__bar"></span
+          ><span class="hamburgar-menu__bar"></span>
+        </label>
+        <label for="theme" class="theme">
+          <input type="checkbox" id="theme" class="theme__checkbox" />
+          <i class="fa-solid fa-sun theme__sun"></i>
+          <i class="fa-solid fa-moon theme__moon"></i>
+          <span class="theme__toggle"> </span>
+        </label>
+        <ul class="nav">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#features" class="nav__link">Features</a></li>
+          <li><a href="#pricing" class="nav__link">Pricing</a></li>
+          <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li><a href="#help" class="nav__link">Help</a></li>
+        </ul>
+        <div class="registration">
+          <a href="#" class="registration__link title">Sign In</a>
+          <a href="#" class="registration__button button">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <section id="about" class="about">
+        <div class="about__bio">
+          <h1 class="about__bio-title title">
+            Want anything to be easy with
+            <span class="about__bio-title-vpn">LaslesVPN.</span>
+          </h1>
+          <div class="description about__bio-description">
+            Provide a network for all your needs with ease and fun using
+            <span class="vpn">LaslesVPN</span> discover interesting features
+            from us.
+          </div>
+          <a href="#pricing" class="about__bio-button button__secondary"
+            >Get Started</a
+          >
+        </div>
+        <div class="about__image">
+          <img
+            src="images/Illustration 1.png"
+            alt="Illustration"
+            class="about__image-pic"
+          />
+        </div>
+        <div class="about__stats">
+          <div class="about__stats-column">
+            <img
+              src="images/user.png"
+              alt="user's icon"
+              class="about__stats-column-image"
+            />
+            <div>
+              <h2 class="title about__stats-column-count">90+</h2>
+              <span>Users</span>
+            </div>
+          </div>
+          <div class="about__stats-column">
+            <img
+              src="images/location.png"
+              alt="location's icon"
+              class="about__stats-column-image"
+            />
+            <div>
+              <h2 class="title about__stats-column-count">30+</h2>
+              <span>Locations</span>
+            </div>
+          </div>
+          <div class="about__stats-column">
+            <img
+              src="images/Server.png"
+              alt="server's icon"
+              class="about__stats-column-image"
+            />
+            <div>
+              <h2 class="title about__stats-column-count">50+</h2>
+              <span>Servers</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <img
+          class="features__image"
+          src="images/Illustration 2.png"
+          alt="features image"
+        />
+        <div class="features__bio">
+          <h2 class="h2-header">We Provide Many Features You Can Use</h2>
+          <p class="description features__description">
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </p>
+          <ul class="features__list">
+            <li class="features__list-item">Powerfull online protection.</li>
+            <li class="features__list-item">Internet without borders.</li>
+            <li class="features__list-item">Supercharged VPN</li>
+            <li class="features__list-item">No specific time limits.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing section">
+        <h2 class="pricing__title h2-header">Choose Your Plan</h2>
+        <p class="description pricing__description">
+          Let's choose the package that is best for you and explore it happily
+          and cheerfully.
+        </p>
+        <div class="pricing__plans">
+          <input
+            id="free"
+            class="pricing__checkbox"
+            type="radio"
+            name="checking"
+            value="free"
+          />
+          <label for="free" class="pricing__plan">
+            <img
+              src="images/Free.png"
+              alt="free pricing plane image"
+              class="pricing__plan-pic"
+            />
+            <h3 class="title pricing__plan-title">Free Plan</h3>
+            <ul class="pricing__plan-features">
+              <li class="pricing__plan-feature">Unlimited Bandwitch</li>
+              <li class="pricing__plan-feature">Encrypted Connection</li>
+              <li class="pricing__plan-feature">No Traffic Logs</li>
+              <li class="pricing__plan-feature">Works on All Devices</li>
+            </ul>
+            <h4 class="pricing__plan-price">Free</h4>
+            <a class="pricing__plan-button button">Select</a>
+          </label>
+          <input
+            id="standard"
+            class="pricing__checkbox"
+            type="radio"
+            name="checking"
+            value="standard"
+          />
+          <label for="standard" class="pricing__plan">
+            <img
+              src="images/Standard.png"
+              alt="free pricing plane image"
+              class="pricing__plan-pic"
+            />
+            <h3 class="title pricing__plan-title">Standard Plan</h3>
+            <ul class="pricing__plan-features">
+              <li class="pricing__plan-feature">Unlimited Bandwitch</li>
+              <li class="pricing__plan-feature">Encrypted Connection</li>
+              <li class="pricing__plan-feature">Yes Traffic Logs</li>
+              <li class="pricing__plan-feature">Works on All Devices</li>
+              <li class="pricing__plan-feature">Connect Anyware</li>
+            </ul>
+            <h4 class="pricing__plan-price">
+              $9 <span class="pricing__plan-price-regular">/ mo </span>
+            </h4>
+            <a class="pricing__plan-button button">Select</a>
+          </label>
+          <input
+            id="premium"
+            class="pricing__checkbox"
+            type="radio"
+            name="checking"
+            value="premium"
+            checked
+          />
+          <label for="premium" class="pricing__plan">
+            <img
+              src="images/Premium.png"
+              alt="free pricing plane image"
+              class="pricing__plan-pic"
+            />
+            <h3 class="title pricing__plan-title">Premium Plan</h3>
+            <ul class="pricing__plan-features">
+              <li class="pricing__plan-feature">Unlimited Bandwitch</li>
+              <li class="pricing__plan-feature">Encrypted Connection</li>
+              <li class="pricing__plan-feature">Yes Traffic Logs</li>
+              <li class="pricing__plan-feature">Works on All Devices</li>
+              <li class="pricing__plan-feature">Connect Anyware</li>
+              <li class="pricing__plan-feature">Get New Features</li>
+            </ul>
+            <h4 class="pricing__plan-price">
+              $12 <span class="pricing__plan-price-regular">/ mo </span>
+            </h4>
+            <a class="pricing__plan-button button">Select</a>
+          </label>
+        </div>
+      </section>
+
+      <section class="global section">
+        <h2 class="h2-header global__title">
+          Huge Global Network <br />
+          of Fast VPN
+        </h2>
+        <p class="global__description description">
+          See <span class="vpn">LaslesVPN</span> everywhere to make it easier
+          for you when you move locations.
+        </p>
+        <img
+          src="images/Huge Global.png"
+          alt="huge global image"
+          class="global__pic"
+        />
+        <div class="global__sponsers">
+          <img
+            src="images/netflix.png"
+            alt="netflix image"
+            class="global__sponser"
+          />
+          <img
+            src="images/reddit.png"
+            alt="reddit image"
+            class="global__sponser"
+          />
+          <img
+            src="images/amazon.png"
+            alt="amazon image"
+            class="global__sponser"
+          />
+          <img
+            src="images/discord.png"
+            alt="discord image"
+            class="global__sponser"
+          /><img
+            src="images/spotify.png"
+            alt="spotify"
+            class="global__sponser"
+          />
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <h2 class="h2-header global__title">
+          Trusted by Thousands of <br />
+          Happy Customer
+        </h2>
+        <p class="global__description description">
+          These are the stories of our customers who have joined us with great
+          pleasure when using this crazy feature.
+        </p>
+        <div class="testimonial__slider">
+          <div class="testimonials__container">
+            <article class="testimonial checked">
+              <div class="testimonial__header">
+                <div class="testimonial__header-profile">
+                  <img
+                    class="testimonial-image"
+                    src="images/client.png"
+                    alt=""
+                  />
+                  <div class="testimonials-info">
+                    <h3 class="testimonial-name">Viezh Robert</h3>
+                    <span class="testimonial-location">Warsaw, Poland</span>
+                  </div>
+                </div>
+                <div class="testimonial__header-rating">
+                  <span class="rating">4.5</span>
+                  <img src="images/star.png" alt="star icon" class="star" />
+                </div>
+              </div>
+              <p class="testimonial__content description">
+                “Wow... I am very happy to use this VPN, it turned out to be
+                more than my expectations and so far there have been no
+                problems. LaslesVPN always the best”.
+              </p>
+            </article>
+            <article class="testimonial">
+              <div class="testimonial__header">
+                <div class="testimonial__header-profile">
+                  <img
+                    class="testimonial-image"
+                    src="images/client2.png"
+                    alt=""
+                  />
+                  <div class="testimonials-info">
+                    <h3 class="testimonial-name">Yessica Christy</h3>
+                    <span class="testimonial-location">Shanxi, China</span>
+                  </div>
+                </div>
+                <div class="testimonial__header-rating">
+                  <span class="rating">4.5</span>
+                  <img src="images/star.png" alt="star icon" class="star" />
+                </div>
+              </div>
+              <p class="testimonial__content description">
+                “I like it because I like to travel far and still can connect
+                with high speed.”.
+              </p>
+            </article>
+            <article class="testimonial">
+              <div class="testimonial__header">
+                <div class="testimonial__header-profile">
+                  <img
+                    class="testimonial-image"
+                    src="images/client3.png"
+                    alt=""
+                  />
+                  <div class="testimonials-info">
+                    <h3 class="testimonial-name">Kim Young Jou</h3>
+                    <span class="testimonial-location">Seoul, South Korea</span>
+                  </div>
+                </div>
+                <div class="testimonial__header-rating">
+                  <span class="rating">4.5</span>
+                  <img src="images/star.png" alt="star icon" class="star" />
+                </div>
+              </div>
+              <p class="testimonial__content description">
+                “This is very unusual for my business that currently requires a
+                virtual private network that has high security.”.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="testimonials__controls" id="slider">
+          <div class="testimonials__indicators" id="indicators">
+            <span class="testimonials__indicators-pointer" id="pointer"></span>
+          </div>
+          <div class="testimonials__nav">
+            <div
+              class="testimonial__nav testimonial__nav-arrow--left"
+              id="prevBtn"
+            >
+              <i class="fa-solid fa-arrow-left arrow-icon"></i>
+            </div>
+            <div
+              class="testimonial__nav testimonial__nav-arrow--right"
+              id="nextBtn"
+            >
+              <i class="fa-solid fa-arrow-right arrow-icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="subscribing">
+          <div class="subscribing__content">
+            <h2 class="subscribing__content-heading">
+              Subscribe Now for <br />
+              Get Special Features!
+            </h2>
+            <p class="subscribing__description">
+              Let's subscribe with us and find the fun.
+            </p>
+          </div>
+          <div class="subscribing__button button__secondary">Subscribe Now</div>
+        </div>
+      </section>
+      <footer class="footer" id="help">
+        <div class="footer__about">
+          <div class="logo">
+            <img class="logo__image" src="images/Logo.png" alt="logo picture" />
+            <span class="title logo__title">
+              Lasles<span class="logo__title-vpn">VPN</span></span
+            >
+          </div>
+          <p class="footer__description">
+            <span class="vpn">LaslesVPN</span> is a private virtual network that
+            has unique features and has high security.
+          </p>
+          <div class="footer__icons">
+            <div class="footer__icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="footer__icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer__icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <p class="footer__copyRight">
+            &copy;2026Lasles<span class="vpn">VPN</span>
+          </p>
+        </div>
+        <div class="footer__services product">
+          <h2 class="footer__list-heading">Product</h2>
+          <ul class="footer__links">
+            <li><a class="footer__links--link">Download</a></li>
+            <li><a class="footer__links--link">Pricing</a></li>
+            <li><a class="footer__links--link">Locations</a></li>
+            <li><a class="footer__links--link">Server</a></li>
+            <li><a class="footer__links--link">Countries</a></li>
+            <li><a class="footer__links--link">Blog </a></li>
+          </ul>
+        </div>
+        <div class="footer__services engage">
+          <h2 class="footer__list-heading">Engage</h2>
+          <ul class="footer__links">
+            <li><a class="footer__links--link">LaslesVPN ?</a></li>
+            <li><a class="footer__links--link">FAQ</a></li>
+            <li><a class="footer__links--link">Tutorials</a></li>
+            <li><a class="footer__links--link">About Us</a></li>
+            <li><a class="footer__links--link">Privacy Policy</a></li>
+            <li><a class="footer__links--link">Terms of Service </a></li>
+          </ul>
+        </div>
+        <div class="footer__services earnMoney">
+          <h2 class="footer__list-heading">Earn Money</h2>
+          <ul class="footer__links">
+            <li><a class="footer__links--link">Affiliate</a></li>
+            <li><a class="footer__links--link">Become Partner</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const slider = document.getElementById("slider");
+      const slides = document.querySelectorAll(".testimonial");
+      const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
+      const indicatorsContainer = document.getElementById("indicators");
+      const pointer = document.getElementById("pointer");
+
+      let currentIndex = 0;
+      let prevIndex = 0;
+      let indicators = [];
+
+      //  Create indicators dynamically
+      slides.forEach((_, index) => {
+        const dot = document.createElement("span");
+        dot.classList.add("testimonials__indicator");
+
+        dot.addEventListener("click", () => {
+          goToSlide(index);
+        });
+
+        indicatorsContainer.appendChild(dot);
+      });
+
+      // Collect indicators AFTER creation
+      indicators = document.querySelectorAll(".testimonials__indicator");
+
+      //  Go to slide
+      function goToSlide(index) {
+        prevIndex = currentIndex;
+        currentIndex = index;
+
+        slider.scrollTo({
+          left: slides[index].offsetLeft,
+          behavior: "smooth",
+        });
+
+        updateUI(true); // animated move
+      }
+
+      // Update UI (active slide + pointer)
+      function updateUI(animated = false) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("checked", i === currentIndex);
+        });
+
+        indicators.forEach((dot, i) => {
+          dot.classList.toggle(
+            "testimonials__indicator-active",
+            i === currentIndex,
+          );
+        });
+
+        movePointer(animated);
+      }
+
+      function movePointer(animate = false) {
+        if (!pointer) return;
+
+        const currentDot = indicators[currentIndex];
+        const prevDot = indicators[prevIndex];
+
+        if (!currentDot || !prevDot) return;
+
+        const currentLeft = currentDot.offsetLeft;
+        const prevLeft = prevDot.offsetLeft;
+
+        const dotWidth = currentDot.offsetWidth;
+        const baseWidth = dotWidth * 2.5; // normal pill width
+
+        //  If no animation (first load or scroll sync)
+        if (!animate || currentIndex === prevIndex) {
+          const centered = currentLeft + dotWidth / 2 - baseWidth / 2;
+
+          pointer.style.width = `${baseWidth}px`;
+          pointer.style.transform = `translate(${centered}px, -50%)`;
+          return;
+        }
+
+        //  Stretch phase
+        const distance = Math.abs(currentLeft - prevLeft);
+        const stretchWidth = baseWidth + distance;
+
+        const start = Math.min(prevLeft, currentLeft);
+
+        pointer.style.width = `${stretchWidth}px`;
+        pointer.style.transform = `translate(${start}px, -50%)`;
+
+        //  Settle phase
+        setTimeout(() => {
+          const centered = currentLeft + dotWidth / 2 - baseWidth / 2;
+
+          pointer.style.width = `${baseWidth}px`;
+          pointer.style.transform = `translate(${centered}px, -50%)`;
+        }, 200); // match CSS width transition
+      }
+
+      //  Next button
+      function getSlideStep() {
+        const slide = slides[0];
+        const style = window.getComputedStyle(slider);
+        const gap = parseFloat(style.columnGap || style.gap || 0);
+
+        return slide.offsetWidth + gap;
+      }
+      nextBtn.addEventListener("click", () => {
+        prevIndex = currentIndex;
+        currentIndex = (currentIndex + 1) % slides.length;
+
+        goToSlide(currentIndex);
+      });
+
+      //  Prev button
+      prevBtn.addEventListener("click", () => {
+        prevIndex = currentIndex;
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+
+        goToSlide(currentIndex);
+      });
+
+      //  Debounced scroll sync
+      let scrollTimeout;
+
+      slider.addEventListener("scroll", () => {
+        clearTimeout(scrollTimeout);
+
+        scrollTimeout = setTimeout(() => {
+          let closestIndex = 0;
+          let closestDistance = Infinity;
+
+          slides.forEach((slide, index) => {
+            const distance = Math.abs(slider.scrollLeft - slide.offsetLeft);
+
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
+            }
+          });
+
+          currentIndex = closestIndex;
+          updateUI();
+        }, 100);
+      });
+
+      //  Initialize on load
+      window.addEventListener("load", () => {
+        pointer.style.transition = "none";
+        goToSlide(0);
+
+        setTimeout(() => {
+          pointer.style.transition = "transform 0.3s ease, width 0.3s ease";
+        }, 50);
+      });
+    </script>
+  </body>
+</html>

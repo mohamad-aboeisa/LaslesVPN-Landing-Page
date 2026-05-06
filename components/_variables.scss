@@ -1,0 +1,52 @@
+// varibales
+:root {
+  --container-width: 114rem;
+  --gutter: 2rem;
+
+  --color-black: #000;
+  --color-white: #ffffff;
+  --color-white-esh: #fafafa;
+  --color-white-esh2: #fefefe;
+  --color-athens-grey: #eeeff2;
+  --color-dark-blue-grey: #4f5665;
+  --color-deep-navy-blue: #0b132a;
+  --color-red: #f53838;
+  --color-red-robin: #f53855;
+  --color-background: var(--color-white);
+  --color-header: var(--color-deep-navy-blue);
+  --color-text: var(--color-dark-blue-grey);
+
+  --font-family-Rubik: "Rubik", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 700;
+  --font-weight-bold: 900;
+
+  --font-size-14: 1.4rem;
+  --font-size-16: 1.6rem;
+  --font-size-18: 1.8rem;
+  --font-size-20: 2rem;
+  --font-size-25: 2.5rem;
+  --font-size-30: 3rem;
+  --font-size-35: 3.5rem;
+  --font-size-50: 5rem;
+
+  --line-height-30: 3rem;
+  --line-height-45: 4.5rem;
+  --line-height-50: 5rem;
+  --line-height-70: 7rem;
+
+  --gap-default: 5rem;
+  --padding-block: 1.3rem;
+  --padding-10: 1rem;
+  --padding-15: 1.5rem;
+  --padding-20: 2rem;
+  --padding-30: 3rem;
+  --padding-50: 5rem;
+  --padding-60: 6rem;
+  --radius-50: 5rem;
+  --radius-10: 1rem;
+
+  --animation-timing: 0.3s;
+}

@@ -1,0 +1,248 @@
+@import "mixins";
+.header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  position: sticky;
+  top: 0;
+  border-bottom: 0.1rem solid var(--color-red);
+  z-index: 1000;
+
+  &__container {
+    @include flexCenter($justify-content: space-between);
+    height: 8rem;
+    @media (max-width: 767px) {
+      & .logo {
+        & {
+          gap: 0.5rem;
+        }
+        & .logo__image {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+
+        & .logo__title {
+          & {
+            font-size: var(--font-size-14);
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  @include flexCenter($justify-content: flex-start);
+  gap: 1rem;
+
+  &__image {
+    width: 3.5rem;
+    width: 3.7rem;
+  }
+
+  &__title {
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-medium);
+
+    &-vpn {
+      font-weight: var(--font-weight-semi-bold);
+    }
+  }
+}
+
+// hamburgar
+
+.hamburgar-menu {
+  width: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  cursor: pointer;
+  order: 1;
+  display: none;
+
+  &__bar {
+    flex-basis: 100%;
+    height: 0.1rem;
+    background-color: var(--color-deep-navy-blue);
+    transition: var(--animation-timing);
+
+    .hamburgar-checkbox:checked + .hamburgar-menu & {
+      &:first-child {
+        transform: translateY(10px) rotate(40deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        transform: translateY(-10px) rotate(-40deg);
+      }
+    }
+  }
+
+  &:hover &__bar,
+  &:active &__bar {
+    background-color: var(--color-red);
+  }
+
+  @media (max-width: 767px) {
+    & {
+      display: flex;
+    }
+  }
+}
+
+.hamburgar-checkbox {
+  display: none;
+}
+
+.hamburgar-checkbox:checked ~ .nav {
+  opacity: 1;
+  visibility: visible;
+}
+.nav {
+  @include flexCenter;
+  gap: 4rem;
+
+  &__link {
+    transition: var(--animation-timing);
+    &:hover {
+      color: var(--color-red);
+    }
+  }
+  @media (max-width: 767px) {
+    & {
+      gap: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgb(245 56 56 / 79%);
+      color: var(--color-white);
+      opacity: 1;
+      width: 100%;
+      visibility: hidden;
+
+      & li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 4.4rem;
+        border-bottom: 0.1rem solid var(--color-white);
+        cursor: pointer;
+
+        .nav__link {
+          width: 100%;
+        }
+
+        &:hover a {
+          color: var(--color-text);
+          transform: translate(2rem, 2rem);
+          font-weight: var(--font-weight-semi-bold);
+        }
+      }
+
+      &__link:not(:last-child) {
+        border-bottom: 0.1rem solid var(--color-white);
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    & {
+      gap: 1rem;
+    }
+  }
+}
+
+.theme {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    & {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  &__moon {
+    transition: 1s;
+    transform: scale(0);
+    color: var(--color-red);
+  }
+
+  &__checkbox:checked ~ &__moon {
+    transform: scale(1) rotate(360deg);
+  }
+
+  &__sun {
+    color: var(--color-deep-navy-blue);
+    position: absolute;
+    transition: 1s;
+  }
+
+  &__checkbox:checked ~ &__sun {
+    transform: scale(0) rotate((360deg));
+  }
+
+  &__toggle {
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(235, 243, 251);
+    transition: 1s;
+    z-index: -1;
+  }
+
+  &__checkbox:checked ~ &__toggle {
+    background-color: #041033;
+    box-shadow: inset 0px 0px 4px 0px #f538388a;
+  }
+}
+
+.registration {
+  @include flexCenter($justify-content: flex-start);
+  gap: calc(var(--gutter) + 1rem);
+
+  @media (max-width: 767px) {
+    & {
+      margin-right: 1rem;
+      margin-left: auto;
+      gap: 1rem;
+      font-size: var(--font-size-14);
+    }
+  }
+
+  &__link {
+    font-weight: var(--font-weight-medium);
+    transition: var(--animation-timing);
+    &:hover {
+      color: var(--color-red);
+    }
+  }
+
+  &__button {
+    @media (max-width: 991px) {
+      & {
+        padding: 0.7rem 2rem;
+      }
+    }
+  }
+}

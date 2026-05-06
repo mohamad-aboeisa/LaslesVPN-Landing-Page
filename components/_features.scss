@@ -1,0 +1,58 @@
+@import "mixins";
+.features {
+  @include twoColumns;
+  align-items: end;
+  column-gap: 4rem;
+  margin-top: 9.583rem;
+  margin-bottom: 12.673rem;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    & {
+      column-gap: 0rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  &__image {
+    max-width: 100%;
+    @media (max-width: 767px) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__bio {
+    @include flexCenter($align-items: flex-start, $justify-content: flex-end);
+    flex-direction: column;
+    row-gap: var(--gutter);
+
+    @media (max-width: 767px) {
+      & {
+        row-gap: 0;
+      }
+    }
+  }
+
+  &__list {
+    font-size: var(--font-size-14);
+
+    &-item {
+      @include flexCenter($justify-content: flex-start);
+      gap: 1rem;
+      padding-bottom: 1.5rem;
+
+      &::before {
+        content: "";
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url(../images/features_icon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
