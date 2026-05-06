@@ -28,8 +28,8 @@ The goal of this project was to translate a high-fidelity design into a function
 ## 📸 Screenshots
 
 | Desktop View | Mobile View | Dark Theme View |
-| :--- | :--- |
-| ![Desktop](screenshots/desktop.png) | ![Mobile](./assets/screenshots/mobile.png) | ![dark-theme](./assets/screenshots/dark-theme.png) |
+| :--- | :--- | :--- |
+| ![Desktop](screenshots/desktop.png) | ![Mobile](screenshots/mobile.png) | ![dark-theme](screenshots/dark-theme.png) |
 
 ---
 
@@ -59,8 +59,8 @@ While building LaslesVPN, I strengthened my skills in:
 
 ## 👤 Author
 
-**Your Name**
-*   GitHub: [@mohamad-aboeisa](https://github.com/mohamad-aboeisa)
+**Mohamad Osama**
+*   GitHub: [mohamad-aboeisa](https://github.com/mohamad-aboeisa)
 *   LinkedIn: [Mohamad Osama](https://www.linkedin.com/in/mohamad-osama-aboeisa)
 
 ---
