@@ -297,7 +297,7 @@
               <p class="testimonial__content description">
                 “Wow... I am very happy to use this VPN, it turned out to be
                 more than my expectations and so far there have been no
-                problems. LaslesVPN always the best”.
+                problems. LaslesVPN always the best.”
               </p>
             </article>
             <article class="testimonial">
@@ -320,7 +320,7 @@
               </div>
               <p class="testimonial__content description">
                 “I like it because I like to travel far and still can connect
-                with high speed.”.
+                with high speed.”
               </p>
             </article>
             <article class="testimonial">
@@ -343,7 +343,7 @@
               </div>
               <p class="testimonial__content description">
                 “This is very unusual for my business that currently requires a
-                virtual private network that has high security.”.
+                virtual private network that has high security.”
               </p>
             </article>
           </div>
@@ -472,12 +472,13 @@
         prevIndex = currentIndex;
         currentIndex = index;
 
-        slider.scrollTo({
-          left: slides[index].offsetLeft,
+        slides[index].scrollIntoView({
           behavior: "smooth",
+          inline: "start",
+          block: "nearest",
         });
 
-        updateUI(true); // animated move
+        updateUI(true);
       }
 
       // Update UI (active slide + pointer)
@@ -537,14 +538,6 @@
         }, 200); // match CSS width transition
       }
 
-      //  Next button
-      function getSlideStep() {
-        const slide = slides[0];
-        const style = window.getComputedStyle(slider);
-        const gap = parseFloat(style.columnGap || style.gap || 0);
-
-        return slide.offsetWidth + gap;
-      }
       //  Next button
       nextBtn.addEventListener("click", () => {
         goToSlide((currentIndex + 1) % slides.length);

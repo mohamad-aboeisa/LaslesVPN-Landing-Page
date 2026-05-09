@@ -3,17 +3,17 @@
   padding-top: 10rem;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
 
   &__container {
     display: flex;
+    align-items: stretch;
     gap: 5rem;
-    max-width: 114rem;
-    margin: 0 auto;
+    width: 100%;
     margin-top: var(--padding-60);
     overflow-x: auto;
-    padding: 2rem;
+    padding-inline: 2rem;
     scroll-snap-type: x mandatory;
+    scroll-padding-left: 2rem;
     scroll-behavior: smooth;
     scrollbar-width: none;
 
@@ -76,6 +76,7 @@
   width: 40rem;
   flex-shrink: 0;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 
   &-image {
     width: 5rem;
@@ -86,7 +87,6 @@
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-medium);
     color: var(--color-deep-navy-blue);
-    column-rule-color: var(--color-deep-navy-blue);
     text-wrap: nowrap;
   }
 
@@ -109,7 +109,7 @@
     }
   }
 
-  &-content {
+  &__content {
     text-align: start;
     line-height: 2.5rem;
     color: var(--color-deep-navy-blue);
