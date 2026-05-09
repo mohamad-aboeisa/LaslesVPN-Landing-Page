@@ -2,7 +2,7 @@
 
 A sleek, responsive VPN service landing page built as a training project. This project focuses on mastering modern CSS layout techniques including **SASS**, **CSS Grid**, and **Flexbox**.
 
-![Project Preview](https://mohamad-aboeisa.github.io/LaslesVPN-Landing-Page/) 
+[Project Preview](https://mohamad-aboeisa.github.io/LaslesVPN-Landing-Page/) 
 
 ## 🚀 Project Overview
 
@@ -27,11 +27,9 @@ The goal of this project was to translate a high-fidelity design into a function
 
 ## 📸 Screenshots
 
-| Desktop View | Mobile View |
-| :--- | :--- |
-| ![Desktop](screenshots/desktop.png) | ![Mobile](./assets/screenshots/mobile.png) |
-
-*(Pro-tip: Create a folder named `assets/screenshots` in your repo and add your images there!)*
+| Desktop View | Mobile View | Dark Theme View |
+| :--- | :--- | :--- |
+| ![Desktop](screenshots/desktop.png) | ![Mobile](screenshots/mobile.png) | ![dark-theme](screenshots/dark-theme.png) |
 
 ---
 
@@ -39,7 +37,7 @@ The goal of this project was to translate a high-fidelity design into a function
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/lasles-vpn.git](https://github.com/your-username/lasles-vpn.git)
+    git clone [https://github.com/mohamad-aboeisa/lasles-vpn.git](https://github.com/mohamad-aboeisa/lasles-vpn.git)
     ```
 2.  **Navigate to the project folder:**
     ```bash
@@ -61,9 +59,9 @@ While building LaslesVPN, I strengthened my skills in:
 
 ## 👤 Author
 
-**Your Name**
-*   GitHub: [@your-username](https://github.com/your-username)
-*   LinkedIn: [Your Name](https://linkedin.com/in/your-profile)
+**Mohamad Osama**
+*   GitHub: [mohamad-aboeisa](https://github.com/mohamad-aboeisa)
+*   LinkedIn: [Mohamad Osama](https://www.linkedin.com/in/mohamad-osama-aboeisa)
 
 ---
 
