@@ -451,6 +451,7 @@
       let currentIndex = 0;
       let prevIndex = 0;
       let indicators = [];
+      let isAutoScrolling = false;
 
       //  Create indicators dynamically
       slides.forEach((_, index) => {
@@ -472,6 +473,8 @@
         prevIndex = currentIndex;
         currentIndex = index;
 
+        isAutoScrolling = true;
+
         slides[index].scrollIntoView({
           behavior: "smooth",
           inline: "start",
@@ -479,6 +482,10 @@
         });
 
         updateUI(true);
+
+        setTimeout(() => {
+          isAutoScrolling = false;
+        }, 500);
       }
 
       // Update UI (active slide + pointer)
@@ -552,6 +559,8 @@
       let scrollTimeout;
 
       slider.addEventListener("scroll", () => {
+        if (isAutoScrolling) return;
+
         clearTimeout(scrollTimeout);
 
         scrollTimeout = setTimeout(() => {
@@ -567,7 +576,9 @@
             }
           });
 
+          prevIndex = currentIndex;
           currentIndex = closestIndex;
+
           updateUI();
         }, 100);
       });
