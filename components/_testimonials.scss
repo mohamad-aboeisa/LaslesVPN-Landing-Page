@@ -3,6 +3,7 @@
   padding-top: 10rem;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 
   &__container {
     display: flex;
@@ -14,9 +15,14 @@
     padding: 2rem;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 
     & .checked {
       border-color: var(--color-red);
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -28,6 +34,7 @@
     display: flex;
     gap: 2rem;
     position: relative;
+    align-items: center;
   }
 
   &__indicator {
@@ -47,10 +54,9 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    will-change: transform, width;
     transition:
       transform 0.35s ease,
-      width 0.2s ease;
+      width 0.3s ease;
   }
 
   &__nav {

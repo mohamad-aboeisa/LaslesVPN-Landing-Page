@@ -275,7 +275,7 @@
           pleasure when using this crazy feature.
         </p>
         <div class="testimonial__slider">
-          <div class="testimonials__container">
+          <div class="testimonials__container" id="slider">
             <article class="testimonial checked">
               <div class="testimonial__header">
                 <div class="testimonial__header-profile">
@@ -348,7 +348,7 @@
             </article>
           </div>
         </div>
-        <div class="testimonials__controls" id="slider">
+        <div class="testimonials__controls">
           <div class="testimonials__indicators" id="indicators">
             <span class="testimonials__indicators-pointer" id="pointer"></span>
           </div>
@@ -545,19 +545,14 @@
 
         return slide.offsetWidth + gap;
       }
+      //  Next button
       nextBtn.addEventListener("click", () => {
-        prevIndex = currentIndex;
-        currentIndex = (currentIndex + 1) % slides.length;
-
-        goToSlide(currentIndex);
+        goToSlide((currentIndex + 1) % slides.length);
       });
 
       //  Prev button
       prevBtn.addEventListener("click", () => {
-        prevIndex = currentIndex;
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-
-        goToSlide(currentIndex);
+        goToSlide((currentIndex - 1 + slides.length) % slides.length);
       });
 
       //  Debounced scroll sync
