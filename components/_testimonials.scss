@@ -17,12 +17,12 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
 
-    & .checked {
-      border-color: var(--color-red);
-    }
-
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    & .checked {
+      border-color: var(--color-red);
     }
   }
 

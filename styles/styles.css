@@ -271,13 +271,16 @@ body {
 .hamburgar-checkbox:checked + .hamburgar-menu .hamburgar-menu__bar:first-child {
   transform: translateY(10px) rotate(40deg);
 }
-.hamburgar-checkbox:checked + .hamburgar-menu .hamburgar-menu__bar:nth-child(2) {
+.hamburgar-checkbox:checked
+  + .hamburgar-menu
+  .hamburgar-menu__bar:nth-child(2) {
   opacity: 0;
 }
 .hamburgar-checkbox:checked + .hamburgar-menu .hamburgar-menu__bar:last-child {
   transform: translateY(-10px) rotate(-40deg);
 }
-.hamburgar-menu:hover .hamburgar-menu__bar, .hamburgar-menu:active .hamburgar-menu__bar {
+.hamburgar-menu:hover .hamburgar-menu__bar,
+.hamburgar-menu:active .hamburgar-menu__bar {
   background-color: var(--color-red);
 }
 @media (max-width: 767px) {
@@ -773,6 +776,7 @@ body {
   padding-top: 10rem;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 .testimonials__container {
   display: flex;
@@ -784,9 +788,13 @@ body {
   padding: 2rem;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 .testimonials__container .checked {
   border-color: var(--color-red);
+}
+.testimonials__container::-webkit-scrollbar {
+  display: none;
 }
 .testimonials__controls {
   display: flex;
@@ -815,8 +823,9 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  will-change: transform, width;
-  transition: transform 0.35s ease, width 0.2s ease;
+  transition:
+    transform 0.35s ease,
+    width 0.3s ease;
 }
 .testimonials__nav {
   display: flex;
@@ -1064,4 +1073,4 @@ html:has(.theme__checkbox:checked) .about-stats {
 }
 html:has(.theme__checkbox:checked) .footer__icon {
   background-color: var(--color-text);
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
